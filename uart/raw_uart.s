@@ -79,10 +79,10 @@ uart0_out:
 
 
 
-.equ rst_base, 0x4000c000
-.equ rst_set, 0x4000e000
-.equ rst_clr, 0x4000f000
+.equ rst_base, 0x4000c000		//reset controller base 2.14.3
+.equ rst_set, 0x4000e000		//atomic register for setting reset controller 2.1.2
+.equ rst_clr, 0x4000f000		//atomic register for clearing reset controller 2.1.2
 
-.equ clk_base, 0x40008000
-.equ uart0_base, 0x40034000
-.equ iobank0_base, 0x40014000
+.equ clk_base, 0x40008000		//clocks register 2.15.7
+.equ uart0_base, 0x40034000		//uart0 register base address 4.2.8
+.equ iobank0_base, 0x40014000	//iobank_0 base address 2.19.6.1
